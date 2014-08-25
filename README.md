@@ -3,13 +3,15 @@ ubiquitiflash
 
 A little bash script to automate flashing Ubiquiti routers
 
-USAGE:
+#USAGE:#
 sudo ./flashy.sh [IMAGE URI]
 
 NOTE that you must run as root, since this script requires setting network options
 
-INSTRUCTIONS:
-Connect over ethernet to the router. Put the router in TFTP mode (instructions can be found here: https://commotionwireless.net/docs/cck/installing-configuring/install-and-recover-tftp/. 
+#INSTRUCTIONS:#
+Connect over ethernet to the router. 
+
+Put the router in TFTP mode. Instructions can be found here: https://commotionwireless.net/docs/cck/installing-configuring/install-and-recover-tftp/. 
 
 You do not need to manually set your IP address at any point.
 
