@@ -17,7 +17,9 @@ You do not need to manually set your IP address at any point.
 
 Once in TFTP mode, run the script, passing in the location of the new firmware image as the first argument. 
 
-The image will be loaded onto the router, which will then reboot. When it reboots, it will hand your computer a DHCP lease (this will take a few minutes -- it is strongly recommended that you take this opportunity to text someone you love).
+The image will be loaded onto the router, which will then reboot. When it reboots, it will hand your computer a DHCP lease 
+
+(This will take a few minutes -- it is strongly recommended that you take this opportunity to text someone you love).
 
 When you see "SUCCESS", you should be able to connect to the router over ethernet.
 
