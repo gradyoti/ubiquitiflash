@@ -1,7 +1,5 @@
 #! /bin/bash
 
-# For Ubiquiti Picostations
-
 if [ "$(id -u)" != "0" ]; then
 	echo -e "Must have root permissions.\nExiting."
 	exit 1
@@ -12,9 +10,10 @@ if [ ! $1 ]; then
 	exit 1
 fi
 
+# read in image location
 IMAGE=$1
 
-# set eth0 ip to 192.168.1.1
+# set eth0 ip
 ifconfig eth0 192.168.1.1 
 
 # start pinging 192.168.1.20 until we get a response
@@ -42,7 +41,7 @@ sleep 2
 
 echo -e "(Now is a good time to text someone you love.)"
 
-# reset DHCP and wait for node to connect (uncomment if not done automagically)
+# reset DHCP and wait for node to connect
 sudo dhclient eth0
 
 echo -e "\n\nSUCCESS!"
