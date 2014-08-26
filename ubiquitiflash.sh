@@ -6,7 +6,7 @@ if [ "$(id -u)" != "0" ]; then
 fi
 
 if [ ! $1 ]; then
-	echo -e "Usage: \nsudo ./flashy.sh [IMAGE URI]"
+	echo -e "Usage: \nsudo ./ubiquitiflash.sh [IMAGE URI]"
 	exit 1
 fi
 
